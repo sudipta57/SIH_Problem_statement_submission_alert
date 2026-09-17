@@ -1,7 +1,4 @@
 {
-  "functions": {
-    "api/check.py": { "maxDuration": 60 }
-  },
   "crons": [
     { "path": "/api/check", "schedule": "30 3 * * *" }
   ]
