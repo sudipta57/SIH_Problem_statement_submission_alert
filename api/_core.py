@@ -15,7 +15,8 @@ HEADERS = {
 
 
 def env(name, default=None):
-    return os.environ.get(name, default)
+    val = os.environ.get(name)
+    return val.strip() if val and val.strip() else default
 
 
 # ------------------------------------------------------------ fetch / parse
